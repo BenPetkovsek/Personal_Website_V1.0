@@ -1,20 +1,143 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+
+<div class="container-fluid" >
+
+    <div class="row">
+      <div class="col-sm-1"><img src="https://www.clipartmax.com/png/middle/114-1149978_our-veterinary-services-dark-blue-social-media-icons.png" class="img-circle" alt="Ben Petkovsek" height="50" width="50" style="margin-top: 30px; margin-left: 25px;"></div>
+      <div class="col-sm-10"></div>
+      <div class="col-sm-1"><button type="button" class="btn btn-outline-light" style="margin-top: 25px; ">RESUME</button></div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-1" > 
+      <app-vert-scroll-line></app-vert-scroll-line>
+    </div>
+
+    <div class="col-sm-10">
+
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8" style= "margin-top: 250px;">
+          <h5 style="color: #9feffc;">Hello world! I am,</h5>
+          <h1 style="font-size: 75px; margin-bottom: -20px; margin-top: -10px; margin-left: -5px;">Ben Petkovsek.</h1>
+          <h1 style="font-size: 65px; color: #c1c1c1;">I create elegant software.</h1>
+          <br>
+          <div class="col-sm-6" style="margin-left: -15px;">
+              <p>Morbi blandit eu diam in varius. Donec blandit maximus velit nec euismod. Maecenas in odio lectus. Aliquam vulputate magna tortor, eu dictum nisi aliquet ut. Fusce sagittis nunc nunc, at volutpat lectus bibendum nec. In elementum quis odio in aliquam. Donec urna eros, luctus quis nisl non, consectetur viverra nisi. Nam eu nisi egestas purus vulputate volutpat vel in felis. Cras ac efficitur arcu, eu aliquam mauris.</p>
+          </div>
+          <br>   
+          </div>
+        <div class="col-sm-2">
+
+        </div>
+
+        <div class=" col-sm-12" style=" margin-top: 320px;">
+          <div class="row">
+              <div class="col-sm-4">
+                  <svg height="50" [attr.width]="getWidth(0)" style="margin-left: -125px;">
+                      <line x1="0" y1="0" y2=0  [attr.x2]="getWidth(0)" style="stroke:#9feffc; stroke-width:2;"></line>
+                  </svg>
+                  <!-- <app-hori-scroll-line></app-hori-scroll-line> -->
+              </div>
+              <div class="col-sm-7">
+                  <h2 [ngClass]="{activated: getActive(0)}"   [ngStyle]="{'margin-top':'-20px'}" >01. About Me</h2>
+              </div>
+                
+                
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="col-sm-6">
+                  <p style="font-size: 20px; margin-top: 20px;">Morbi blandit eu diam in varius. Donec blandit maximus velit nec euismod. Maecenas in odio lectus. Aliquam vulputate magna tortor, eu dictum nisi aliquet ut. Fusce sagittis nunc nunc, at volutpat lectus bibendum nec. In elementum quis odio in aliquam. Donec urna eros, luctus quis nisl non, consectetur viverra nisi. Nam eu nisi egestas purus vulputate volutpat vel in felis. Cras ac efficitur arcu, eu aliquam mauris.</p>
+                  <p style="font-size: 20px; margin-top: 60px;">Dictum nisi aliquet ut. Fusce sagittis nunc nunc, at volutpat lectus bibendum nec. In elementum quis odio in aliquam. Donec urna eros, luctus quis nisl non, consectetur viverra nisi. Nam eu nisi egestas purus vulputate volutpat vel in felis. Cras ac efficitur arcu.</p>
+              </div>
+              <div class="col-sm-6" >
+                    <div class="box overlay" [ngClass]="{'overlay': !getActive(0)}"></div>
+              </div>
+          </div>
+         
+
+
+          <div class=" col-sm-12" style=" margin-top: 400px;">
+              <div class="row">
+                  <div class="col-sm-4">
+
+                      <svg height="50" [attr.width]="getWidth(1)" style="margin-left: -125px;">
+                          <line x1="0" y1="0" y2=0  [attr.x2]="getWidth(1)" style="stroke:#9feffc; stroke-width:2;"></line>
+                      </svg>
+                      <!-- <app-hori-scroll-line></app-hori-scroll-line> -->
+                  </div>
+                  <div class="col-sm-7">
+                      <h2 [ngClass]="{activated: getActive(1)}"   [ngStyle]="{'margin-top':'-20px'}" >02. Skills</h2>
+                  </div>
+                    
+                    
+                </div>
+              </div>
+
+            <div class=" col-sm-12" style=" margin-top: 1000px;">
+                <div class="row">
+                    <div class="col-sm-4">
+                      
+                        <svg height="50" [attr.width]="getWidth(2)" style="margin-left: -125px;">
+                            <line x1="0" y1="0" y2=0  [attr.x2]="getWidth(2)" style="stroke:#9feffc; stroke-width:2;"></line>
+                        </svg>
+                        <!-- <app-hori-scroll-line></app-hori-scroll-line> -->
+                    </div>
+                    <div class="col-sm-7">
+                        <h2 [ngClass]="{activated: getActive(2)}"   [ngStyle]="{'margin-top':'-20px'}" >03. Experience</h2>
+                    </div>
+                      
+                      
+                  </div>
+                </div>
+
+                <div class=" col-sm-12" style=" margin-top: 1000px;">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <svg height="50" [attr.width]="getWidth(3)" style="margin-left: -125px;">
+                                <line x1="0" y1="0" y2=0  [attr.x2]="getWidth(3)" style="stroke:#9feffc; stroke-width:2;"></line>
+                            </svg>
+                            <!-- <app-hori-scroll-line></app-hori-scroll-line> -->
+                        </div>
+                        <div class="col-sm-7">
+                            <h2 [ngClass]="{activated: getActive(3)}"   [ngStyle]="{'margin-top':'-20px'}" >04. Projects</h2>
+                        </div>
+                          
+                          
+                      </div>
+                    </div>
+                    <div class=" col-sm-12" style=" margin-top: 1000px;">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <svg height="50" [attr.width]="getWidth(4)" style="margin-left: -125px;">
+                                    <line x1="0" y1="0" y2=0  [attr.x2]="getWidth(4)" style="stroke:#9feffc; stroke-width:2;"></line>
+                                </svg>
+                                <!-- <app-hori-scroll-line></app-hori-scroll-line> -->
+                            </div>
+                            <div class="col-sm-7">
+                                <h2 [ngClass]="{activated: getActive(4)}"   [ngStyle]="{'margin-top':'-20px'}" >05. Contact</h2>
+                            </div>
+                              
+                              
+                          </div>
+                        </div>
+          
+    </div>
+
+    <div class="col-sm-1">
+     <p>I'm not aware of any such list, especially considering that, e.g., (according to MDN) a DOM element inherits from Node and EventTarget, and implements ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable. Each of those can have their own properties. To find properties, I normally use MDN or use Chrome dev tools (Elements, then the Properties tab). In your case, height is an attribute of an svg element, not a property, so you need to use attribute binding: I'm not aware of any such list, especially considering that, e.g., (according to MDN) a DOM element inherits from Node and EventTarget, and implements ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable. Each of those can have their own properties. To find properties, I normally use MDN or use Chrome dev tools (Elements, then the Properties tab). In your case, height is an attribute of an svg element, not a property, so you need to use attribute binding: I'm not aware of any such list, especially considering that, e.g., (according to MDN) a DOM element inherits from Node and EventTarget, and implements ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable. Each of those can have their own properties. To find properties, I normally use MDN or use Chrome dev tools (Elements, then the Properties tab). In your case, height is an attribute of an svg element, not a property, so you need to use attribute binding: I'm not aware of any such list, especially considering that, e.g., (according to MDN) a DOM element inherits from Node and EventTarget, and implements ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable. Each of those can have their own properties. To find properties, I normally use MDN or use Chrome dev tools (Elements, then the Properties tab). In your case, height is an attribute of an 
+        I'm not aware of any such list, especially considering that, e.g., (according to MDN) a DOM element inherits from Node and EventTarget, and implements ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable. Each of those can have their own properties. To find properties, I normally use MDN or use Chrome dev tools (Elements, then the Properties tab). In your case, height is an attribute of an svg element, not a property, so you need to use attribute binding: I'm not aware of any such list, especially considering that, e.g., (according to MDN) a DOM element inherits from Node and EventTarget, and implements ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable. Each of those can have their own properties. To find properties, I normally use MDN or use Chrome dev tools (Elements, then the Properties tab). In your case, height is an attribute of an svg element, not a property, so you need to use attribute binding: I'm not aware of any such list, especially considering that, e.g., (according to MDN) a DOM element inherits from Node and EventTarget, and implements ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable. Each of those can have their own properties. To find properties, I normally use MDN or use Chrome dev tools (Elements, then the Properties tab). In your case, height is an attribute of an svg element, not a property, so you need to use attribute binding: I'm not aware of any such list, especially considering that, e.g., (according to MDN) a DOM element inherits from Node and EventTarget, and implements ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable. Each of those can have their own properties. To find properties, I normally use MDN or use Chrome dev tools (Elements, then the Properties tab). In your case, height is an attribute of an 
+        I'm not aware of any such list, especially considering that, e.g., (according to MDN) a DOM element inherits from Node and EventTarget, and implements ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable. Each of those can have their own properties. To find properties, I normally use MDN or use Chrome dev tools (Elements, then the Properties tab). In your case, height is an attribute of an svg element, not a property, so you need to use attribute binding: I'm not aware of any such list, especially considering that, e.g., (according to MDN) a DOM element inherits from Node and EventTarget, and implements ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable. Each of those can have their own properties. To find properties, I normally use MDN or use Chrome dev tools (Elements, then the Properties tab). In your case, height is an attribute of an svg element, not a property, so you need to use attribute binding: I'm not aware of any such list, especially considering that, e.g., (according to MDN) a DOM element inherits from Node and EventTarget, and implements ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable. Each of those can have their own properties. To find properties, I normally use MDN or use Chrome dev tools (Elements, then the Properties tab). In your case, height is an attribute of an svg element, not a property, so you need to use attribute binding: I'm not aware of any such list, especially considering that, e.g., (according to MDN) a DOM element inherits from Node and EventTarget, and implements ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable. Each of those can have their own properties. To find properties, I normally use MDN or use Chrome dev tools (Elements, then the Properties tab). In your case, height is an attribute of an 
+
+      </p> 
+    </div>
+    
+  </div>
+
+  
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+
+
 
